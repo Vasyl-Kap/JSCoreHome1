@@ -1,35 +1,36 @@
 // #2
 
+'use strict'
 let myMath = {
     a: 5,
     b: 2,
     get c() {
         return this.a + this.b;
     },
-    sum() {
+    sumFunction: function() {
         console.log(`${this.a} + ${this.b} = ${this.c}`)
     },
     get d() {
         return this.a * this.b;
     },
-    mult() {
+    multFunction: function() {
         console.log(`${this.a} * ${this.b} = ${this.d}`)
     },
     get e() {
         return this.a / this.b;
     },
-    div() {
+    divFunction: function() {
         console.log(`${this.a} / ${this.b} = ${this.e}`)
     },
     get f() {
         return this.a - this.b;
     },
-    sub() {
+    subFunction: function() {
         console.log(`${this.a} - ${this.b} = ${this.f}`)
     }
 }
-myMath.sum();
-myMath.mult();
-myMath.div();
-myMath.sub();
+myMath.sumFunction();
+myMath.multFunction();
+myMath.divFunction();
+myMath.subFunction();
 
